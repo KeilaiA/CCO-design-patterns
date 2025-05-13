@@ -1,0 +1,13 @@
+flowchart TD
+    A{"police report description of a person"} -- "rdf.type" --> D["Descriptive information content entity"]
+    A -- generically_depnds_on --> E{"piece_of_paper"}
+    E -- "rdf.type" --> F["information bearing entity"]
+   E--is mention of-->B{Alleged Person}
+
+     B--"rdf.type"-->G[Material Entity BFO:0000040]
+    style A fill:#E1BEE7
+   style D fill:#FFD600
+    style E fill:#E1BEE7
+    style F fill:#FFD600
+    style B fill:#E1BEE7
+    style G fill:#FFD600
